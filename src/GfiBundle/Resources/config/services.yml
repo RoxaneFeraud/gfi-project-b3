@@ -1,0 +1,4 @@
+services:
+#    gfi.example:
+#        class: GfiBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
