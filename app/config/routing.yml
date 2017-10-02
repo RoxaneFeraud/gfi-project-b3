@@ -1,0 +1,8 @@
+gfi:
+    resource: "@GfiBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
