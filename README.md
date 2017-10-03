@@ -1,72 +1,59 @@
-Symfony Standard Edition
-========================
+Projet workshop B3 pour l'ecole d'informatique EPSI de MONTPELLIER
 
-Welcome to the Symfony Standard Edition - a fully-functional Symfony
-application that you can use as the skeleton for your new applications.
+Développer en PHP / HTML / CSS / JAVASCRIPT
 
-For details on how to download and get started with Symfony, see the
-[Installation][1] chapter of the Symfony Documentation.
+à l'aide du Framework Symfony3.
 
-What's inside?
---------------
+Contributeur:
 
-The Symfony Standard Edition is configured with the following defaults:
+Maxime Egido, Jeremy Dijon, Hugo Castel-laville, Roxane Feraud, Guillaume Langouet.
 
-  * An AppBundle you can use to start coding;
+Fork le projet suivant sur son propre git
 
-  * Twig as the only configured template engine;
+https://github.com/team-workshop-epsi-montpellier-b3/gfi-project-b3.git
 
-  * Doctrine ORM/DBAL;
+Une fois le projet fork tu peux récupérer l’adresse https du projet à présent disponible sur ton compte git.
 
-  * Swiftmailer;
+Ensuite tu peux clone le projet dans le dossier de ton choix à l’aide de la commande:
 
-  * Annotations enabled for everything.
+git clone urlDuProjetSurTonCompte
 
-It comes pre-configured with the following bundles:
+Une fois le projet téléchargé, et un environnement de dev Mysql / PHP / Apache installé sur ta machine, tu peux lancer les commandes suivantes dans le dossier du projet en ligne de commande afin d’installer les dépendances du projet:
 
-  * **FrameworkBundle** - The core Symfony framework bundle
+php composer.phar install
 
-  * [**SensioFrameworkExtraBundle**][6] - Adds several enhancements, including
-    template and routing annotation capability
+Symfony va vous demander de renseigner les paramètres de votre projet, renseigner les identifiants database de votre local.
 
-  * [**DoctrineBundle**][7] - Adds support for the Doctrine ORM
+php bin/console doctrine:database:create
 
-  * [**TwigBundle**][8] - Adds support for the Twig templating engine
+php bin/console cache:clear
 
-  * [**SecurityBundle**][9] - Adds security by integrating Symfony's security
-    component
 
-  * [**SwiftmailerBundle**][10] - Adds support for Swiftmailer, a library for
-    sending emails
+Une fois tout ceci effectué,
 
-  * [**MonologBundle**][11] - Adds support for Monolog, a logging library
+Pour démarrer le projet avec le serveur web natif de Symfony tu peux lancer la commande toujours au même endroit:
 
-  * **WebProfilerBundle** (in dev/test env) - Adds profiling functionality and
-    the web debug toolbar
+php bin/console server:run
 
-  * **SensioDistributionBundle** (in dev/test env) - Adds functionality for
-    configuring and working with Symfony distributions
 
-  * [**SensioGeneratorBundle**][13] (in dev env) - Adds code generation
-    capabilities
+Pour récupérer les données de l'upstream master sur votre propre git, vous pouvez tapper cette commande dans le dossier de votre projet:
 
-  * [**WebServerBundle**][14] (in dev env) - Adds commands for running applications
-    using the PHP built-in web server
+git pull upstream master
 
-  * **DebugBundle** (in dev/test env) - Adds Debug and VarDumper component
-    integration
+Ensuite, il faut penser à push les données récupérées sur votre propre repo git, à l'aide de cette commande:
 
-All libraries and bundles included in the Symfony Standard Edition are
-released under the MIT or BSD license.
+git push origin master
 
-Enjoy!
 
-[1]:  https://symfony.com/doc/3.3/setup.html
-[6]:  https://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/index.html
-[7]:  https://symfony.com/doc/3.3/doctrine.html
-[8]:  https://symfony.com/doc/3.3/templating.html
-[9]:  https://symfony.com/doc/3.3/security.html
-[10]: https://symfony.com/doc/3.3/email.html
-[11]: https://symfony.com/doc/3.3/logging.html
-[13]: https://symfony.com/doc/current/bundles/SensioGeneratorBundle/index.html
-[14]: https://symfony.com/doc/current/setup/built_in_web_server.html
+if(erreur)  appelez les pompiers !
+else {
+       Copier l’url que symfony te renvoi et la coller dans ton navigateur.
+}
+
+Enjoy, it works !
+
+
+Initialiser son compte git :
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
