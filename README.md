@@ -35,6 +35,16 @@ Pour démarrer le projet avec le serveur web natif de Symfony tu peux lancer la 
 
 php bin/console server:run
 
+
+Pour récupérer les données de l'upstream master sur votre propre git, vous pouvez tapper cette commande dans le dossier de votre projet:
+
+git pull upstream master
+
+Ensuite, il faut penser à push les données récupérées sur votre propre repo git, à l'aide de cette commande:
+
+git push origin master
+
+
 if(erreur)  appelez les pompiers !
 else {
        Copier l’url que symfony te renvoi et la coller dans ton navigateur.
